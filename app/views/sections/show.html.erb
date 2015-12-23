@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>Name
+  <h4><%= @section.name %></h4>
+</p>
+<p>AuthorId
+  <h4><%= @section.author_id %></h4>
+</p>
+
+<p>Image
+  <h4><%= @section.image %></h4>
+</p>
+<%= link_to 'Edit', edit_section_path(@section) %>
+<%= link_to 'Back', sections_path %>
