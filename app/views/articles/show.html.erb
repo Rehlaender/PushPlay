@@ -10,13 +10,13 @@
   <h4><%= @article.image %></h4>
 </p>
 <p>CategoryId
-  <h4><%= @article.category_id %></h4>
+  <h4><%= @article.category.name %></h4>
 </p>
 <p>Content
   <h4><%= @article.content %></h4>
 </p>
 <p>AuthorId
-  <h4><%= @article.author_id %></h4>
+  <h4><%= @article.author.name %></h4>
 </p>
 <%= link_to 'Edit', edit_article_path(@article) %>
 <%= link_to 'Back', articles_path %>

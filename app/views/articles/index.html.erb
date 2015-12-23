@@ -25,9 +25,9 @@
         <td><%= article.title %></td>
         <td><%= article.subtitle %></td>
         <td><%= article.image %></td>
-        <td><%= article.category_id %></td>
+        <td><%= article.category.name %></td>
         <td><%= article.content %></td>
-        <td><%= article.author_id %></td>
+        <td><%= article.author.name %></td>
         <td><%= article.created_at %></td>
         <td><%= link_to 'Show', article %></td>
         <td><%= link_to 'Edit', edit_article_path(article) %></td>
