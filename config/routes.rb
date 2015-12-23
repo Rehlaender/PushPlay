@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   resources :authors
   resources :sections
 
-  get 'static_pages/home'
+  get 'home', to: 'static_pages#home', as: :home
+  get 'aboutus', to: 'static_pages#aboutus', as: :aboutus
+  get 'contact', to: 'static_pages#contact', as: :contact
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
