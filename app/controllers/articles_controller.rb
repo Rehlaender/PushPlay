@@ -1,7 +1,7 @@
 class ArticlesController < ApplicationController
 
   def new
-    @article = Artilce.new(article_params)
+    @article = Article.new
   end
 
   def create
@@ -29,6 +29,8 @@ class ArticlesController < ApplicationController
   def destroy
     @article = Article.find(params[:id])
     @article.destroy
+
+    redirect_to articles_path
   end
 
   def index
@@ -42,5 +44,6 @@ class ArticlesController < ApplicationController
   private
   def article_params
     params.require(:article).permit(:title, :subtitle, :image, :category_id, :content, :author_id)
+
   end
 end
