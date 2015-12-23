@@ -12,6 +12,10 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+gem "therubyracer"
+gem "less-rails", :git => 'https://github.com/suzan2go/less-rails.git', :branch => 'fix-nomethoderror-for-sprockets3'
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+
 group :production do
   gem 'pg'
   gem 'rails_12factor', '0.0.2'
