@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   resources :articles
   resources :categories
+  resources :authors
 
   get 'static_pages/home'
 

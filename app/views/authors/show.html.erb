@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<p>Name
+  <h4><%= @author.name %></h4>
+</p>
+<p>Image
+  <h4><%= @author.image %></h4>
+
+<%= link_to 'Edit', edit_author_path(@author) %> |
+<%= link_to 'Back', authors_path %>
