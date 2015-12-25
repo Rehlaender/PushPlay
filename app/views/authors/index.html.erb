@@ -18,7 +18,7 @@
       <tr>
         <td><%= author.id %></td>
         <td><%= author.name %></td>
-        <td><%= author.image %></td>
+        <td><%= image_tag(author.image, class:"img-responsive") %></td>
         <td><%= author.created_at %></td>
         <td><%= link_to 'Show', author %></td>
         <td><%= link_to 'Edit', edit_author_path(author) %></td>
