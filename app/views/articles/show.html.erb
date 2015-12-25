@@ -7,7 +7,7 @@
   <h4><%= @article.subtitle %></h4>
 </p>
 <p>Image
-  <h4><%= @article.image %></h4>
+  <h4><%= image_tag(@article.image, class:"img-responsive") %></h4>
 </p>
 <p>CategoryId
   <h4><%= @article.category.name %></h4>

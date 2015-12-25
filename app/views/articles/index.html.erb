@@ -24,7 +24,7 @@
         <td><%= article.id %></td>
         <td><%= article.title %></td>
         <td><%= article.subtitle %></td>
-        <td><%= article.image %></td>
+        <td><%= image_tag(article.image, class:"img-responsive") %></td>
         <td><%= article.category.name %></td>
         <td><%= article.content %></td>
         <td><%= article.author.name %></td>

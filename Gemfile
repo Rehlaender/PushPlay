@@ -16,6 +16,8 @@ gem "therubyracer"
 gem "less-rails", :git => 'https://github.com/suzan2go/less-rails.git', :branch => 'fix-nomethoderror-for-sprockets3'
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 
+gem 'carrierwave'
+
 group :production do
   gem 'pg'
   gem 'rails_12factor', '0.0.2'
