@@ -4,7 +4,7 @@
   <h4><%= @author.name %></h4>
 </p>
 <p>Image
-  <h4>  <td><%= image_tag(@author.image, class:"img-responsive") %></td></h4>
+  <h4><%= image_tag(@author.image, class:"img-responsive") %></h4>
 </p>
 <%= link_to 'Edit', edit_author_path(@author) %>
 <%= link_to 'Back', authors_path %>
