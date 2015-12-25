@@ -4,7 +4,7 @@
   <h4><%= @category.name %></h4>
 </p>
 <p>Image
-  <h4><td><%= image_tag(@category.image, class:"img-responsive") %></td></h4>
+  <h4><%= image_tag(@category.image, class:"img-responsive") %></h4>
 </p>
 <%= link_to 'Edit', edit_category_path(@category) %>
 <%= link_to 'Back', categories_path %>
