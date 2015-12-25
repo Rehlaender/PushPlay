@@ -1,7 +1,14 @@
 Rails.application.routes.draw do
 
   resources :articles
-  resources :categories
+
+  #resources :categories
+  resources :categories do
+    member do
+      get 'articles',to: 'categories#articles'
+    end
+  end
+
   resources :authors
   resources :sections
 
