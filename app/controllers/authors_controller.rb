@@ -40,6 +40,10 @@ class AuthorsController < ApplicationController
     @author = Author.find(params[:id])
   end
 
+  def articles
+    @articles = Author.find(params[:id]).articles
+  end
+
   private
   def author_params
     params.require(:author).permit(:name, :image)

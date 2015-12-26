@@ -2,14 +2,17 @@ Rails.application.routes.draw do
 
   resources :articles
 
-  #resources :categories
   resources :categories do
     member do
       get 'articles',to: 'categories#articles'
     end
   end
+  resources :authors do
+    member do
+      get 'articles',to: 'authors#articles'
+    end
+  end
 
-  resources :authors
   resources :sections
 
   get 'home', to: 'static_pages#home', as: :home
