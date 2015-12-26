@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>PushPlay</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-<div class="">
-<%= render 'layouts/navbar' %>
-</div>
-<%= yield %>
-
-</body>
+  <head>
+    <title>PushPlay</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div class="">
+      <%= render 'layouts/navbar' %>
+    </div>
+    <div class="col-md-10">
+      <%= yield %>
+    </div>
+    <div class="col-md-2">
+      <%= render 'layouts/sponsor' %>
+    </div>
+  </body>
 </html>
