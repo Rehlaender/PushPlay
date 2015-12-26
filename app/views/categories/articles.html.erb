@@ -22,7 +22,7 @@
     <% @articles.each do |article| %>
       <tr>
         <td><%= article.id %></td>
-        <td><%= article.title %></td>
+        <td><%= link_to article.title, article %></td>
         <td><%= article.subtitle %></td>
         <td><%= image_tag(article.image, class:"img-responsive") %></td>
         <td><%= article.category.name %></td>

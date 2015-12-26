@@ -19,7 +19,7 @@
       <tr>
         <td><%= section.id %></td>
         <td><%= section.name %></td>
-        <td><%= section.author.name %></td>
+        <td><%= link_to section.author.name, articles_author_path(section.id) %></td>
         <td><%= image_tag(section.image, class:"img-responsive") %></td>
         <td><%= section.created_at %></td>
         <td><%= link_to 'Show', section %></td>
