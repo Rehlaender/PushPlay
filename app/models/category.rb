@@ -1,5 +1,5 @@
 class Category < ActiveRecord::Base
-  has_one :article
+  has_many :articles
 
   mount_uploader :image, CategoryUploader
 end
