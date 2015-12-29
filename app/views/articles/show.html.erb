@@ -13,7 +13,8 @@
   <h4><%= @article.category.name %></h4>
 </p>
 <p>Content
-  <h4><%= @article.content %></h4>
+  <h4><%=raw @article["content"] %></h4>
+
 </p>
 <p>AuthorId
   <h4><%= @article.author.name %></h4>
