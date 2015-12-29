@@ -11,7 +11,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 #~Encriptacion
-gem 'bcrypt',               '3.1.7'
+gem 'bcrypt', '3.1.7'
 #~bootstrap
 gem "therubyracer"
 gem "less-rails", :git => 'https://github.com/suzan2go/less-rails.git', :branch => 'fix-nomethoderror-for-sprockets3'
