@@ -1,5 +1,5 @@
 <% stylesheet_link_tag "navbar" %>
-<nav class="navbar navbar-navo">
+<nav class="navbar-navo">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -17,7 +17,7 @@
       <ul class="nav navbar-nav">
         <% @categories = Category.all
             @categories.each do |category| %>
-            <li id="navico"><%= link_to image_tag(category.image, class: "", id: "navico"), articles_category_path(category.id) %></li>
+            <li id=""><%= link_to image_tag(category.image, class: "", id: "navico"), articles_category_path(category.id) %></li>
         <% end %>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Authors <span class="caret"></span></a>
@@ -44,5 +44,7 @@
         <li><%= link_to 'About us', :aboutus  %></li>
         <li><%= link_to 'Contact', :contact  %></li>
     </div><!-- /.navbar-collapse -->
+
   </div><!-- /.container-fluid -->
 </nav>
+<br>

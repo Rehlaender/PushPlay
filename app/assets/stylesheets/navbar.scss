@@ -2,13 +2,23 @@
 .navbar-navo {
     background-color: white;
     border-color: #E7E7E7;
+    width: 100%;
+	  height: 20%;
 }
 /* Icons */
 #navico{
   border: 2px solid red;
-  height: 2em;
-  width: 2em;
+  height: 100%;
+
 }
+
+.line-separator{
+  height:3px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  width: 100%;
+}
+
 
 /* title */
 .navbar-navo .navbar-brand {
