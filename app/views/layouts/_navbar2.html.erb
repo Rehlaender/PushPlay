@@ -1,0 +1,20 @@
+<% stylesheet_link_tag "navbar2" %>
+<nav class="navbar ">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="navbar-brand">
+        <%= link_to image_tag('icons/newlogopushplay2.png', class:"img-responsive", id: "navico-brand" ), :home, { class: "navbar-brand" } %>
+      </div>
+    </div>
+    <div class="nav navbar-nav">
+      <% @categories = Category.all
+          @categories.each do |category| %>
+          <%= link_to image_tag(category.image, class: "", id: "ima"), articles_category_path(category.id) %>
+      <% end %>
+    </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+  </div>
+</nav>

@@ -9,16 +9,19 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <%= link_to "PushPlay", :home, { :class=>"navbar-brand" }  %>
+      <%= link_to image_tag('icons/newlogopushplay2.png', class:"img-responsive", id: "navico-brand" ), :home, { class: "navbar-brand" } %>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav navbar-right">
         <% @categories = Category.all
             @categories.each do |category| %>
-            <li id=""><%= link_to image_tag(category.image, class: "invert", id: "navico"), articles_category_path(category.id) %></li>
+            <li id=""><%= link_to image_tag(category.image, class: "img-responsive", id: "navico"), articles_category_path(category.id) %></li>
         <% end %>
+      </ul>
+      <ul class="nav navbar-nav navbar-left">
+
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Authors <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -40,9 +43,9 @@
         <li><%= link_to 'Logout', logout_path, method: "delete" %></li>
         <% end %>
         <li><%= link_to 'Login', login_path %></li>
-
         <li><%= link_to 'About us', :aboutus  %></li>
         <li><%= link_to 'Contact', :contact  %></li>
+      </ul>
     </div><!-- /.navbar-collapse -->
 
   </div><!-- /.container-fluid -->

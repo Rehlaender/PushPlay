@@ -3,15 +3,27 @@
     background-color: white;
     border-color: #E7E7E7;
     width: 100%;
-	  height: 20%;
+	  height: 70%;
+}
+.navbar-navo2 {
+    background-color: red;
+    border: 2px solid red;
+    width: 100%;
+	  height: 70%;
+}
+.navbar-nav li a #ima {
+    line-height:1em;
+    padding: 0 0 0;
 }
 /* Icons */
 #navico{
   border: 2px solid red;
-  height: 100%;
-
+  max-height: 100%;
 }
-
+#navico-brand{
+  max-height: 7em;
+  max-width: auto;
+}
 .line-separator{
   height:3px;
   border-top: 1px solid gray;

@@ -1,0 +1,176 @@
+/* navbar */
+/* line 3, /home/mario/pruby/PushPlay/app/assets/stylesheets/navbar.scss */
+.navbar-navo {
+  background-color: white;
+  border-color: #E7E7E7;
+  width: 100%;
+  height: 20%;
+}
+
+/* Icons */
+/* line 10, /home/mario/pruby/PushPlay/app/assets/stylesheets/navbar.scss */
+#navico {
+  border: 2px solid red;
+  height: 100%;
+}
+
+/* line 16, /home/mario/pruby/PushPlay/app/assets/stylesheets/navbar.scss */
+.line-separator {
+  height: 3px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  width: 100%;
+}
+
+/* Icon-effects */
+/* line 23, /home/mario/pruby/PushPlay/app/assets/stylesheets/navbar.scss */
+.saturate {
+  -webkit-filter: saturate(3);
+  filter: saturate(3);
+}
+
+/* line 24, /home/mario/pruby/PushPlay/app/assets/stylesheets/navbar.scss */
+.grayscale {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+/* line 25, /home/mario/pruby/PushPlay/app/assets/stylesheets/navbar.scss */
+.contrast {
+  -webkit-filter: contrast(160%);
+  filter: contrast(160%);
+}
+
+/* line 26, /home/mario/pruby/PushPlay/app/assets/stylesheets/navbar.scss */
+.brightness {
+  -webkit-filter: brightness(0.25);
+  filter: brightness(0.25);
+}
+
+/* line 27, /home/mario/pruby/PushPlay/app/assets/stylesheets/navbar.scss */
+.blur {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+}
+
+/* line 28, /home/mario/pruby/PushPlay/app/assets/stylesheets/navbar.scss */
+.invert {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+/* line 29, /home/mario/pruby/PushPlay/app/assets/stylesheets/navbar.scss */
+.sepia {
+  -webkit-filter: sepia(100%);
+  filter: sepia(100%);
+}
+
+/* line 30, /home/mario/pruby/PushPlay/app/assets/stylesheets/navbar.scss */
+.huerotate {
+  -webkit-filter: hue-rotate(180deg);
+  filter: hue-rotate(180deg);
+}
+
+/* line 31, /home/mario/pruby/PushPlay/app/assets/stylesheets/navbar.scss */
+.rss.opacity {
+  -webkit-filter: opacity(50%);
+  filter: opacity(50%);
+}
+
+/*~*/
+/*~*/
+/*~*/
+/*~*/
+/*~*/
+/*~*/
+/* title */
+/* line 35, /home/mario/pruby/PushPlay/app/assets/stylesheets/navbar.scss */
+.navbar-navo .navbar-brand {
+  color: #777;
+}
+
+/* line 38, /home/mario/pruby/PushPlay/app/assets/stylesheets/navbar.scss */
+.navbar-navo .navbar-brand:hover,
+.navbar-navo .navbar-brand:focus {
+  color: #5E5E5E;
+}
+
+/* link */
+/* line 43, /home/mario/pruby/PushPlay/app/assets/stylesheets/navbar.scss */
+.navbar-navo .navbar-nav > li > a {
+  color: #777;
+}
+
+/* line 46, /home/mario/pruby/PushPlay/app/assets/stylesheets/navbar.scss */
+.navbar-navo .navbar-nav > li > a:hover,
+.navbar-navo .navbar-nav > li > a:focus {
+  color: #333;
+}
+
+/* line 50, /home/mario/pruby/PushPlay/app/assets/stylesheets/navbar.scss */
+.navbar-navo .navbar-nav > .active > a,
+.navbar-navo .navbar-nav > .active > a:hover,
+.navbar-navo .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: #E7E7E7;
+}
+
+/* line 56, /home/mario/pruby/PushPlay/app/assets/stylesheets/navbar.scss */
+.navbar-navo .navbar-nav > .open > a,
+.navbar-navo .navbar-nav > .open > a:hover,
+.navbar-navo .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #D5D5D5;
+}
+
+/* caret */
+/* line 63, /home/mario/pruby/PushPlay/app/assets/stylesheets/navbar.scss */
+.navbar-navo .navbar-nav > .dropdown > a .caret {
+  border-top-color: #777;
+  border-bottom-color: #777;
+}
+
+/* line 67, /home/mario/pruby/PushPlay/app/assets/stylesheets/navbar.scss */
+.navbar-navo .navbar-nav > .dropdown > a:hover .caret,
+.navbar-navo .navbar-nav > .dropdown > a:focus .caret {
+  border-top-color: #333;
+  border-bottom-color: #333;
+}
+
+/* line 72, /home/mario/pruby/PushPlay/app/assets/stylesheets/navbar.scss */
+.navbar-navo .navbar-nav > .open > a .caret,
+.navbar-navo .navbar-nav > .open > a:hover .caret,
+.navbar-navo .navbar-nav > .open > a:focus .caret {
+  border-top-color: #555;
+  border-bottom-color: #555;
+}
+
+/* mobile version */
+/* line 79, /home/mario/pruby/PushPlay/app/assets/stylesheets/navbar.scss */
+.navbar-navo .navbar-toggle {
+  border-color: #DDD;
+}
+
+/* line 82, /home/mario/pruby/PushPlay/app/assets/stylesheets/navbar.scss */
+.navbar-navo .navbar-toggle:hover,
+.navbar-navo .navbar-toggle:focus {
+  background-color: #DDD;
+}
+
+/* line 86, /home/mario/pruby/PushPlay/app/assets/stylesheets/navbar.scss */
+.navbar-navo .navbar-toggle .icon-bar {
+  background-color: #CCC;
+}
+
+@media (max-width: 767px) {
+  /* line 90, /home/mario/pruby/PushPlay/app/assets/stylesheets/navbar.scss */
+  .navbar-navo .navbar-nav .open .dropdown-menu > li > a {
+    color: #777;
+  }
+
+  /* line 93, /home/mario/pruby/PushPlay/app/assets/stylesheets/navbar.scss */
+  .navbar-navo .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-navo .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+  }
+}
