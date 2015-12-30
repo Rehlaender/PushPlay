@@ -6,6 +6,7 @@
       <% @newarticles.each do |article| %>
         <div class="col-md-6 col-xs-12">
           <p id="sq_icon"><%= image_tag(article.category.image) %></p>
+          <p id="sq_tri"></p>
           <%= link_to image_tag(article.image, class: "img-square img-responsive"), article_path(article.id), {style: "background-color: black"} %>
           <p id="sq_title"><%= article.title %></p>
         </div>
