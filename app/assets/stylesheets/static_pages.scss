@@ -3,9 +3,18 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .prepo{
-  color: white;
-  background-color: black;
+
 }
-.prepo-cir{
-  background-color: red;
+
+.line-separator{
+  height:3px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  width: 100%;
+}
+
+#cir{
+  background-color: #00FFFF;
+  height: 11em;
+  width: 11em;
 }

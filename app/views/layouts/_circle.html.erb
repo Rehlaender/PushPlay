@@ -1,24 +1,20 @@
+<br>
 <div class="col-md-12">
   <% @fiveArticles = Article.order(created_at: :desc).first(6) %>
   <div class="row">
-    <p>
-      __
-    </p>
+    <div class="line-separator"></div>
     <div class="container-fluid">
       <p>
         Reportajes
       </p>
       <% @fiveArticles.each do |article| %>
         <div class="col-md-2 col-xs-4">
-          <%= link_to image_tag(article.image, class: "img-circle", size:"80x80"), article_path(article.id), {style: "background-color: black"} %>
+          <%= link_to image_tag(article.image, class: "img-circle", id:"cir"), article_path(article.id), {style: "background-color: black"} %>
           <p><%= article.title %></p>
         </div>
 
       <% end %>
     </div>
-
-    <p>
-      __
-    </p>
+    <div class="line-separator"></div>
   </div>
 </div>
