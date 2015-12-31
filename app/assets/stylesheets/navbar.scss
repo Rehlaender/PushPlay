@@ -17,8 +17,9 @@
 }
 /* Icons */
 #navico{
-  border: 2px solid red;
   max-height: 100%;
+  -webkit-filter: invert(50%);
+  filter: invert(50%);
 }
 #navico-brand{
   max-height: 7em;

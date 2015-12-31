@@ -2,16 +2,19 @@
   <% @newarticles = Article.order(created_at: :desc) %>
   <div class="container-fluid">
     <div class="row">
-
       <% @newarticles.each do |article| %>
         <div class="col-md-6 col-xs-12">
-          <p id="sq_icon"><%= image_tag(article.category.image) %></p>
-          <p id="sq_tri"></p>
-          <%= link_to image_tag(article.image, class: "img-square img-responsive"), article_path(article.id), {style: "background-color: black"} %>
-          <p id="sq_title"><%= article.title %></p>
+          <div class="sq_dad">
+            <%= link_to image_tag(article.image, class: "img-square img-responsive", id:"sq_image"), article_path(article.id), {style: "background-color: black"} %>
+            <%= image_tag(article.category.image, class: "invert", id: "sq_icon") %>
+            <div class="sq_son">
+              <div id="sq_tri"></div>
+              <div id="sq_title"><%= article.title %></div>
+            </div>
+          </div>
+
         </div>
       <% end %>
-
     </div>
   </div>
 </div>

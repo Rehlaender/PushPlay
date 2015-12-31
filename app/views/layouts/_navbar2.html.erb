@@ -9,7 +9,7 @@
     <div class="nav navbar-nav">
       <% @categories = Category.all
           @categories.each do |category| %>
-          <%= link_to image_tag(category.image, class: "", id: "ima"), articles_category_path(category.id) %>
+          <%= link_to image_tag(category.image, class: "", id: "navico"), articles_category_path(category.id) %>
       <% end %>
     </div>
       <ul class="nav navbar-nav navbar-right">

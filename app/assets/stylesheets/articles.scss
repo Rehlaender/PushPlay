@@ -1,27 +1,59 @@
 // Place all the styles related to the Articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#sq_dad{
+  position: relative;
+}
+
+#sq_son{
+
+}
+
 #sq_title{
+  z-index: 100;
+  position: relative;
   text-transform: uppercase;
   text-align: center;
-  font-size: 150%;
+  font-size: 130%;
   background-color: gray;
   color: white;
+  width: 100%;
+  bottom: 0%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+
+#sq_image{
+  position: relative;
+  z-index: 1;
+}
+
 }
 #sq_icon{
   position: absolute; // Reposition logo from the natural layout
-  left: 1em;
-  top: 0em;
-  z-index: 2;
+  left: 5%;
+  top: 3%;
+  z-index: 3;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
 }
 #sq_tri {
   position: absolute; // Reposition logo from the natural layout
-  right: 3em;
-  bottom: 2em;
-  z-index: 3;
+  right: 5%;
+  bottom: 0%;
+  z-index: 4442;
 	width: 0;
 	height: 0;
-	border-left: 1.5em solid transparent;
-	border-right: 1.5em solid transparent;
-	border-bottom: 2em solid gray;
+	border-left: 1em solid transparent;
+	border-right: 1em solid transparent;
+	border-bottom: 1.5em solid red;
 }
+.gris {-webkit-filter: invert(50%); filter: invert(100%); }
+.saturate {-webkit-filter: saturate(3); filter: saturate(3);}
+.grayscale {-webkit-filter: grayscale(100%); filter: grayscale(100%);}
+.contrast {-webkit-filter: contrast(160%); filter: contrast(160%);}
+.brightness {-webkit-filter: brightness(0.25); filter: brightness(0.25);}
+.blur {-webkit-filter: blur(3px); filter: blur(3px);}
+.invert {-webkit-filter: invert(100%); filter: invert(100%);}
+.sepia {-webkit-filter: sepia(100%); filter: sepia(100%);}
+.huerotate {-webkit-filter: hue-rotate(180deg); filter: hue-rotate(180deg);}
+.rss.opacity {-webkit-filter: opacity(50%); filter: opacity(50%);}
