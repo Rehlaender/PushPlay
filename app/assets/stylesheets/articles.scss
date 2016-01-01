@@ -47,6 +47,15 @@
 	border-right: 1em solid transparent;
 	border-bottom: 1.5em solid red;
 }
+
+#imagen{
+  width: 100%
+  
+}
+.titles{
+  width: 100%;
+}
+
 .gris {-webkit-filter: invert(50%); filter: invert(100%); }
 .saturate {-webkit-filter: saturate(3); filter: saturate(3);}
 .grayscale {-webkit-filter: grayscale(100%); filter: grayscale(100%);}

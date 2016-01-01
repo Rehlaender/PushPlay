@@ -1,23 +1,47 @@
 <p id="notice"><%= notice %></p>
-
-<p>Title
-  <h4><%= @article.title %></h4>
-</p>
-<p>SubTitle
-  <h4><%= @article.subtitle %></h4>
-</p>
-<p>Image
-  <h4><%= image_tag(@article.image, class:"img-responsive") %></h4>
-</p>
-<p>CategoryId
-  <h4><%= @article.category.name %></h4>
-</p>
-<p>Content
-  <h4><%=raw @article["content"] %></h4>
-
-</p>
-<p>AuthorId
-  <h4><%= @article.author.name %></h4>
-</p>
-<%= link_to 'Edit', edit_article_path(@article) %>
-<%= link_to 'Back', articles_path %>
+<div class="container-fluid col-md-10 col-md-offset-1">
+  <div class="row">
+    <div class="article col-md-9 col-s-12">
+      <div class="titles">
+        <h1><%= @article.title %>:</h4>
+        <h3><%= @article.subtitle %>.</h4>
+        <%= image_tag(@article.image, class:"img-responsive", id:"imagen") %>
+      </div>
+        <br>
+      <div class="content">
+        <%=raw @article["content"] %>
+          <br><br>
+        <p>Ariculo por: <%= link_to @article.author.name, articles_author_path(@article.author.id) %></p>
+        <!--<p>Articulo tipo: <%= @article.category.name %></h4> -->
+      </div>
+        <br>
+      <div class="admin">
+        <%= link_to 'Edit', edit_article_path(@article), class:"btn btn-default" %>
+        <%= link_to 'Back', articles_path, class:"btn btn-default" %>
+      </div>
+      <br>
+    </div><!--article-->
+    <div class="sponsor col-md-3 col-s-12">
+      <%= render 'layouts/sponsor' %>
+    </div><!--sponsor -->
+    <div class="comments col-md-12 col-s-12">
+      <div class="row">
+        <ul>
+          <li><h2>Comments</h2></li>
+          <li><a href="#">Escribir comentario</a></li>
+        </ul>
+      </div><!-- row -->
+      <div class="line-separator"></div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut bibendum,
+        nibh pellentesque ultrices placerat, lacus nibh maximus dolor,
+        sed volutpat augue tortor nec orci. Donec non interdum ipsum.
+        Morbi bibendum turpis volutpat quam efficitur ornare.
+        Aliquam pulvinar pulvinar neque sit amet molestie.
+        Mauris sit amet gravida lorem. In mattis purus non porta suscipit.
+      </p>
+      <div class="line-separator"></div>
+      <br>
+    </div><!-- comments -->
+  </div> <!--row-->
+</div><!--container-->
