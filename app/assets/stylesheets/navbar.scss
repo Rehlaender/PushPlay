@@ -31,6 +31,12 @@
   border-bottom: 1px solid gray;
   width: 100%;
 }
+
+.vline-separator{
+  color: gray;
+  height: 100%;
+}
+
 /* Icon-effects */
 .saturate {-webkit-filter: saturate(3); filter: saturate(3);}
 .grayscale {-webkit-filter: grayscale(100%); filter: grayscale(100%);}

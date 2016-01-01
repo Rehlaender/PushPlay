@@ -14,10 +14,11 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-left">
         <% @categories = Category.all
             @categories.each do |category| %>
             <li id=""><%= link_to image_tag(category.image, class: "img-responsive", id: "navico"), articles_category_path(category.id) %></li>
+            <li class="vline-separator">|</li>
         <% end %>
       </ul>
       <ul class="nav navbar-nav navbar-left">
@@ -40,10 +41,14 @@
       <ul class="nav navbar-nav navbar-right">
         <% if logged_in? %>
         <li><%= link_to current_user.name, user_path(current_user) %></li>
+        <li class="vline-separator">|</li>
         <li><%= link_to 'Logout', logout_path, method: "delete" %></li>
+        <li class="vline-separator">|</li>
         <% end %>
         <li><%= link_to 'Login', login_path %></li>
+        <li class="vline-separator">|</li>
         <li><%= link_to 'About us', :aboutus  %></li>
+        <li class="vline-separator">|</li>
         <li><%= link_to 'Contact', :contact  %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
