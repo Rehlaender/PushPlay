@@ -10,16 +10,14 @@
         <br>
       <div class="content">
         <%=raw @article["content"] %>
-          <br><br>
+          <br>
         <p>Ariculo por: <%= link_to @article.author.name, articles_author_path(@article.author.id) %></p>
         <!--<p>Articulo tipo: <%= @article.category.name %></h4> -->
       </div>
-        <br>
       <div class="admin">
         <%= link_to 'Edit', edit_article_path(@article), class:"btn btn-default" %>
         <%= link_to 'Back', articles_path, class:"btn btn-default" %>
       </div>
-      <br>
     </div><!--article-->
     <div class="sponsor col-md-3 col-s-12">
       <%= render 'layouts/sponsor' %>
