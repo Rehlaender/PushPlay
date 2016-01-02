@@ -1,8 +1,8 @@
 class Article < ActiveRecord::Base
   #~relationships
   belongs_to :author
-  belongs_to :category
-  has_many :comments
+  belongs_to :category  
+  has_many :comments, dependent: :destroy
   #~validations
   validates :title, presence: true, length: { minimum: 3}
   validates :subtitle, presence: true, length: { minimum: 3}

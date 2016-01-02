@@ -3,7 +3,9 @@
       @comments.each do |comment| %>
       <p>Id articulo: <%= comment.article.title %></p>
       <p>Escrito por: <%= comment.name %></p>
-      <p>"<%= comment.content %>"
-      </p>
-      <% end %>
+      <p><%= comment.content %></p>
+      <%= link_to 'Destroy Comment', [comment.article, comment],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+  <% end %>
 </div>
