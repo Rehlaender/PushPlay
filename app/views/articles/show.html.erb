@@ -24,12 +24,10 @@
     </div><!--sponsor -->
     <div class="comments col-md-12 col-s-12">
       <div class="row">
-        <ul>
-          <li><h2>Comments</h2></li>
-          <li><a href="#">Escribir comentario</a></li>
-        </ul>
+          <h2>Comments</h2>
+          <button type="button" name="btn-comment" class="btn btn-default" id="btncomment">Escribir un comentario</button>
       </div><!-- row -->
-      <div class="new-comment">
+      <div class="new-comment" id="newcomment">
         <%= render "comments/form" %>
       </div>
       <div class="line-separator"></div>
