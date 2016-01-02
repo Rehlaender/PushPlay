@@ -1,0 +1,9 @@
+<div class="">
+  <% @comments = Comment.where(article_id: @article.id)
+      @comments.each do |comment| %>
+      <p>Id articulo: <%= comment.article.title %></p>
+      <p>Escrito por: <%= comment.name %></p>
+      <p>"<%= comment.content %>"
+      </p>
+      <% end %>
+</div>
